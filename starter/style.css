@@ -15,6 +15,7 @@ body {
   margin: 0;
 }
 
+
 .home-page {
   display: flex;
   align-items: center;
@@ -23,6 +24,12 @@ body {
   padding: 5px 10px 5px 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: 0.7s ease-in-out;
+  max-width: 90px;
+  height: 70px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .home-page:hover {
   background-color: rgba(253, 253, 253, 0.548);
