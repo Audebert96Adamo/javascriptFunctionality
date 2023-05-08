@@ -11,82 +11,122 @@
     <div class="page-title"><h1>Javascript Functionality</h1></div>
 
     <div class="container">
-      <div class="card">
-        <a href="./1_Expanding_cards/index.html">
-          <div class="img-card">
-            <img src="./img/img_1.png" alt="" width="100%" height="150px" />
+      <!-- PAGINATION  -->
+      <ul id="paginated-list" data-current-page="1" aria-live="polite">
+        <li>
+          <div class="card">
+            <a href="./1_Expanding_cards/index.html">
+              <div class="img-card">
+                <img src="./img/img_1.png" alt="" width="100%" height="150px" />
+              </div>
+              <div class="tittle-card">
+                <h3>1. Expanding cards</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>1. Expanding cards</h3>
-          </div>
-        </a>
-      </div>
+        </li>
 
-      <div class="card">
-        <a href="./2_Progress_steps/index.html">
-          <div class="img-card">
-            <img src="./img/img_2.png" alt="" width="100%" height="90%" />
+        <li>
+          <div class="card">
+            <a href="./2_Progress_steps/index.html">
+              <div class="img-card">
+                <img src="./img/img_2.png" alt="" width="100%" height="90%" />
+              </div>
+              <div class="tittle-card">
+                <h3>2. Progress steps</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>2. Progress steps</h3>
-          </div>
-        </a>
-      </div>
+        </li>
 
-      <div class="card">
-        <a href="./3_Rotating_navigation/index.html">
-          <div class="img-card">
-            <img src="./img/img_3.png" alt="" width="100%" height="150px" />
+        <li>
+          <div class="card">
+            <a href="./3_Rotating_navigation/index.html">
+              <div class="img-card">
+                <img src="./img/img_3.png" alt="" width="100%" height="150px" />
+              </div>
+              <div class="tittle-card">
+                <h3>3. Rotating navigation</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>3. Rotating navigation</h3>
-          </div>
-        </a>
-      </div>
+        </li>
 
-      <div class="card">
-        <a href="./4_Hidden_search/">
-          <div class="img-card">
-            <img src="./img/img_4.png" alt="" width="100%" height="150px" />
+        <li>
+          <div class="card">
+            <a href="./4_Hidden_search/">
+              <div class="img-card">
+                <img src="./img/img_4.png" alt="" width="100%" height="150px" />
+              </div>
+              <div class="tittle-card">
+                <h3>4. Hidden search</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>4. Hidden search</h3>
-          </div>
-        </a>
-      </div>
+        </li>
 
-      <div class="card">
-        <a href="./5_blurry_loading/">
-          <div class="img-card">
-            <img src="./img/img_5.png" alt="" width="100%" height="150px" />
+        <li>
+          <div class="card">
+            <a href="./5_blurry_loading/">
+              <div class="img-card">
+                <img src="./img/img_5.png" alt="" width="100%" height="150px" />
+              </div>
+              <div class="tittle-card">
+                <h3>5. Blurry loading</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>5. Blurry loading</h3>
-          </div>
-        </a>
-      </div>
+        </li>
 
-      <div class="card">
-        <a href="./6_Scroll_animation/">
-          <div class="img-card">
-            <img src="./img/img_6.png" alt="" />
+        <li>
+          <div class="card">
+            <a href="./6_Scroll_animation/">
+              <div class="img-card">
+                <img src="./img/img_6.png" alt="" />
+              </div>
+              <div class="tittle-card">
+                <h3>6. Scroll animation</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>6. Scroll animation</h3>
-          </div>
-        </a>
-      </div>
+        </li>
 
-      <div class="card">
-        <a href="./7_Split_page">
-          <div class="img-card">
-            <img src="./img/img_7.png" alt="" />
+        <li>
+          <div class="card">
+            <a href="./7_Split_page">
+              <div class="img-card">
+                <img src="./img/img_7.png" alt="" />
+              </div>
+              <div class="tittle-card">
+                <h3>7. Split page</h3>
+              </div>
+            </a>
           </div>
-          <div class="tittle-card">
-            <h3>7. Split page</h3>
-          </div>
-        </a>
-      </div>
+        </li>
+      </ul>
+
+      <nav class="pagination-container">
+        <button
+          class="pagination-button"
+          id="prev-button"
+          aria-label="Previous page"
+          title="Previous page"
+        >
+          Prev
+        </button>
+
+        <div id="pagination-numbers"></div>
+
+        <button
+          class="pagination-button"
+          id="next-button"
+          aria-label="Next page"
+          title="Next page"
+        >
+          Next
+        </button>
+      </nav>
+      <!-- PAGINATION END -->
     </div>
     <!-- END CONTAINER  -->
     <!-- </section> -->
