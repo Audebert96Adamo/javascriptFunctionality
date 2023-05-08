@@ -25,34 +25,34 @@ padding: 50px;
 align-items: center;
 }
 .card {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 25px;
   width: 25%;
   height: 12em;
   margin: 20px;
   padding: 0;
-  cursor: pointer;
-  transition: 0.7s ease-in-out;
+  transition: 0.5s  ease-out;
 }
 .card:hover {
-  background-color: rgba(194, 194, 194, 0.438);
+  background-color: rgba(236, 235, 235, 0.459);
   box-shadow: rgba(0, 0, 0, 0.514) 1.95px 1.95px 2.6px;
   transform: scale(1.1);
-  transition: 0.7s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .img-card {
 width: 100%;
 }
 img {
   border-radius: 25px 25px 0 0 ;
+  width: 100;
 }
 a {
   color: black;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
-a:hover {
-  color: rgba(0, 0, 0, 0.541);
-}
+
