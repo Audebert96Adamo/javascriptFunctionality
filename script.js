@@ -89,7 +89,7 @@ window.addEventListener("load", () => {
 
   document.querySelectorAll(".pagination-number").forEach((button) => {
     const pageIndex = Number(button.getAttribute("page-index"));
-
+    // console.log(pageIndex);
     if (pageIndex) {
       button.addEventListener("click", () => {
         setCurrentPage(pageIndex);
