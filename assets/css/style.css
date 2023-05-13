@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --background-rgb: 29 30 34;
+  
+  --blue-rgb: 33 150 243;
+  --primary-rgb: var(--blue-rgb);
+  
+  --color-1: rgb(var(--blue-rgb));
+  --color-2: dodgerblue;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -154,3 +163,72 @@ a h3 {
   left: -105%;
   transform: translateX(-50%);
 } */
+        
+.trapezoid {
+  height: 0;
+  width: 100%;
+  border-top: 100px solid #32557f8a;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: relative;
+  top: 0;
+}
+.trapezoid:after
+/* .trapezoid:before*/ { 
+  content: "";
+  height: 5px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  translate: -50% 0%;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.7s ease-in-out;
+}
+.trapezoid:before {
+  width: 15%;
+  top: 0rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.trapezoid:after {
+  width: 25%;
+  bottom: 0rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.trapezoid ul {
+  list-style: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+}
+
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+  
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+.screen-overlay {    
+  background: linear-gradient(
+    rgb(var(--primary-rgb) / 0.15),
+    rgb(var(--primary-rgb) / 0.15) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  background-size: 100% 9px;
+  height: 100%;
+  width: 100%;
+  animation: pan-overlay 22s infinite linear;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  top: 0px;
+}
