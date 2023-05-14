@@ -165,13 +165,13 @@ a h3 {
 } */
         
 .trapezoid {
-  height: 0;
+  height: 100px;
   width: 100%;
-  border-top: 100px solid #32557f8a;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
   position: relative;
-  top: 0;
+  border-radius: 0 0 600px 600px;
+  overflow: hidden;
+  border: 2px solid rgb(var(--primary-rgb) / 80%);
+
 }
 .trapezoid:after
 /* .trapezoid:before*/ { 
@@ -231,4 +231,4 @@ a h3 {
   z-index: 20;
   left: 0px;
   top: 0px;
-}
+} 
